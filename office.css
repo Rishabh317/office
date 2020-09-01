@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#background{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+#img1{
+    position: absolute;
+    
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80);
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+#img2{position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-image: url( https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-position: bottom;
+    background-size: cover;
+  
+}
+#overlay{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.699);
+}
+#background h1{
+    
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat';
+
+
+}
+#background button{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 50px;
+    width: 175px;
+    transform: translate(-50%, -50%);
+    
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+
+}
+#text button:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+#about{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    font-family: 'Montserrat';
+    background-color: #fff;
+}
+
+#about h1{
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 70px;
+}
+
+#about p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#images{
+    width: 60%;
+    height: 400px;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#images img{
+    width: 350px;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.418);
+}
+
+#images #one{
+    top: 25%;
+    left: 10%;
+}
+
+#images #two{
+    top: 35%;
+    left: 25%;
+    z-index:2;
+}
+
+#images #three{
+    top: 17%;
+    left: 45%;
+}
+
+#images img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 99999999;
+}
